@@ -1,0 +1,126 @@
+table tr .tab1{
+    background-color: #1e1f28;
+    border: none;
+    color: white;
+}
+table tr .tab1:hover{
+    color: blue;
+}
+table tr .tab2{
+    background-color: #1e1f28;
+    border: none;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.subTable1{
+    width: 100%;
+    text-align: left;
+    background-color: #1e1f28;
+    /* margin: 2px; */
+    
+}
+.subTable2{
+    /* width: 45%; */
+    text-align: left;
+    background-color: #1e1f28;
+}
+ .text{
+    color:#256f25;
+}
+.text1{
+    color:#c94444;
+}
+.bord{
+    border: 1px solid #1e1f28;
+    border-radius: 7px;
+    background-color: #1e1f28;
+}
+.icon{
+    width:20px
+}
+.rightArrow{
+    
+    border: 0px solid #b4afaf;
+    border-radius:24px;
+    background-color: #b4afaf;
+    padding: 2px;
+}
+table tr .tab3{
+    background-color: #1e1f28;
+    color:white;
+    border: none;
+
+}
+.name{
+    font-family: sans-serif;
+    padding-left: 10px;
+}
+.feedback{
+    font-family: sans-serif;
+    font-size: 10px;
+    color:#4d4c4c;
+
+}
+.feedback1{
+    color:yellow;
+}
+table tr .data{
+    background-color: #1e1f28;
+    color: aliceblue;
+    border: none;
+}
+table tr .data1{
+    background-color: #1e1f28;
+    color: aliceblue;
+    border: none;
+}
+.heading1{
+    text-align: left;
+    color: aliceblue;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 10px 0px;
+    
+}
+.verticalMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width:575px){
+   .col1{
+    width:100% !important;
+   }
+
+}
+@media (max-width:640px) {
+    thead .dataRow .data1 {
+        display: none!important;
+    }
+    .table .data {
+        display: block !important;
+        padding-right: 20px !important;
+    }
+    .table tbody .dataRow {
+        margin-bottom: 15px !important;
+    }
+    .table tbody .dataRow .data{
+        text-align: right !important;
+        position: relative !important;
+    }
+    .table .data::before{
+        content: attr(data-label) !important;
+        position: absolute !important;
+        left: 20px !important;
+        vertical-align: middle !important;
+        font-weight: bold !important;
+    }
+    .data2{
+        margin-bottom: 5px !important;
+    }
+    /* .form-control {
+        width:50% !important;
+    } */
+}
